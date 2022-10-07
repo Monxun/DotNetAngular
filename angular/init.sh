@@ -30,7 +30,8 @@ fi
 
 # CREATE PROJECT
 if [ "$create_project" != "false" ]; then
-      ng new $project_name
+    echo "Creating project..."
+    ng new $project_name
 fi
 
 
@@ -46,12 +47,14 @@ newtext="@import '~bootstrap/dist/css/bootstrap.min.css';"
 
 # UPDATE APP STYLES
 if [ "$newtext" != "" ]; then
-      # Append the text by using '>>' symbol
-      echo $newtext >> $filename
+    echo "Updating styles.css..."
+    # Append the text by using '>>' symbol
+    echo $newtext >> $filename
 fi
 
 # GENERATE NEW MODULES + ROUTING & COMPONENTS
 if [ "$create_components" != "false" ]; then
+    echo "Creating components..."
     cd $project_name
     for i in Home Tasks News Tools; do ng g m "${i}" --routing; done
     for i in Home Tasks News Tools; do ng g c "${i}"; done
@@ -60,6 +63,7 @@ fi
 
 # INSTANTIATE TEMPLATES DIR & HTML FILES
 if [ "$setup_dirs" != "false" ]; then
+    echo "Setting up directories..."
     mkdir templates
     cd templates 
     touch app.html home.html tasks.html news.html tools.html
