@@ -20,4 +20,8 @@ fi
 for i in Home Tasks News Tools; do ng g m "${i}" --routing; done
 for i in Home Tasks News Tools; do ng g c "${i}"; done
 
+# INSTANTIATE TEMPLATES DIR & HTML FILES
+mkdir templates
+cd templates 
+touch app.html home.html tasks.html news.html tools.html
 
