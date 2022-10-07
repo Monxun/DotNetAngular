@@ -1,20 +1,50 @@
 #!/bin/bash
+# //////////////////////////////////////////////////////////////////////////////////
+# DESCRIPTION: This script is used to initialize the Angular project.
+# //////////////////////////////////////////////////////////////////////////////////
 
+
+# //////////////////////////////////////////////////////////////////////////////////
+# VARS
+# //////////////////////////////////////////////////////////////////////////////////
 project_name='AstreaX'
-setup_dirs='false'
-create_components='false'
 
-# INSTALL BOOTSTRAP
-npm install bootstrap
+install_dependencies='false'
+create_project='false'
+create_components='false'
+setup_dirs='false'
+
+
+# //////////////////////////////////////////////////////////////////////////////////
+# INSTALL DEPENDENCIES & CREATE PROJECT
+# //////////////////////////////////////////////////////////////////////////////////
+if [ "$install_dependencies" != "false" ]; then
+    echo "Installing dependencies..."
+
+    # INSTALL ANGULAR CLI
+    npm install -g @angular/cli
+
+    # INSTALL BOOTSTRAP
+    npm install bootstrap
+fi
+
+# CREATE PROJECT
+if [ "$create_project" != "false" ]; then
+      ng new $project_name
+fi
+
+
+# //////////////////////////////////////////////////////////////////////////////////
+# CONFIGURE PROJECT
+# //////////////////////////////////////////////////////////////////////////////////
 
 # UPDATE styles.css WITH BOOTSTRAP IMPORT
-# Define the filename
 filename="./$project_name/src/styles.css"
 
 # Type the text that you want to append
 newtext="@import '~bootstrap/dist/css/bootstrap.min.css';"
 
-# Check the new text is empty or not
+# UPDATE APP STYLES
 if [ "$newtext" != "" ]; then
       # Append the text by using '>>' symbol
       echo $newtext >> $filename
@@ -27,7 +57,6 @@ if [ "$create_components" != "false" ]; then
     for i in Home Tasks News Tools; do ng g c "${i}"; done
     cd ..
 fi
-
 
 # INSTANTIATE TEMPLATES DIR & HTML FILES
 if [ "$setup_dirs" != "false" ]; then
