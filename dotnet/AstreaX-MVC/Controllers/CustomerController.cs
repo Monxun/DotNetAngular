@@ -11,22 +11,10 @@ namespace AstreaX_MVC.Controllers
     [Route("[controller]")]
     public class CustomerController : Controller
     {
-        private readonly ILogger<CustomerController> _logger;
 
-        public CustomerController(ILogger<CustomerController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
+        public IActionResult Orders()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
         }
     }
 }
