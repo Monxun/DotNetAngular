@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/monxun/Git/Portfolio/DotNetAngular/dotnet/AstreaX-MVC/Views/Customer/Orders.cshtml",
+      "TargetPath": "Views\\Customer\\Orders.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/monxun/Git/Portfolio/DotNetAngular/dotnet/AstreaX-MVC/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
