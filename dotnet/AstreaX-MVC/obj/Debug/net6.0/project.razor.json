@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/monxun/Git/Portfolio/DotNetAngular/dotnet/AstreaX-MVC/Controllers/Customer/Orders.cshtml",
+      "TargetPath": "Controllers\\Customer\\Orders.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/monxun/Git/Portfolio/DotNetAngular/dotnet/AstreaX-MVC/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
