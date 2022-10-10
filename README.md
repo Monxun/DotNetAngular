@@ -1,9 +1,8 @@
 # DotNetAngular
 DotNetAngular Repo
-
-# LINKS:
-https://angular.io/guide/setup-local
-
+ 
+![ANGULAR HOME](./asngular/angular-home.png?raw=true)
+![CUSTOMER ORDERS](./orders-screen.png?raw=true)
 # Setup
 *** RUN CONVENIENCE SCRIPTS ***
 
