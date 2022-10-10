@@ -15,10 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/monxun/Git/Portfolio/DotNetAngular/dotnet/AstreaX-MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/monxun/Git/Portfolio/DotNetAngular/dotnet/AstreaX-MVC/Controllers/Customer/Orders.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnMvQ3VzdG9tZXIvT3JkZXJzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/monxun/Git/Portfolio/DotNetAngular/dotnet/AstreaX-MVC/Views/Customer/Orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvT3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

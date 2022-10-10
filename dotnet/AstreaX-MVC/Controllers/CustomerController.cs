@@ -10,7 +10,7 @@ using AstreaX_MVC.ViewModels;
 
 namespace AstreaX_MVC.Controllers
 {
-    [Route("[controller]")]
+    [Route("[controller]/orders")]
     public class CustomerController : Controller
     {
 
