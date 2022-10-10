@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd AstreaX
-ng serve --open
+ng serve --open --live-reload
