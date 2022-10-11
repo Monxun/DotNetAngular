@@ -2,10 +2,10 @@
 DotNetAngular Repo
  
 # ANGULAR
-![ANGULAR HOME](./asngular/angular-home.png?raw=true)
+![ANGULAR HOME](./angular/angular-home.png?raw=true)
 
 # .NET
-![CUSTOMER ORDERS](./orders-screen.png?raw=true)
+![CUSTOMER ORDERS](./dotnet/orders-screen.png?raw=true)
 
 # Setup
 *** RUN CONVENIENCE SCRIPTS ***
